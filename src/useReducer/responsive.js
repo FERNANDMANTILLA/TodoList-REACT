@@ -9,7 +9,7 @@ const responsiveScript = () => {
     const fontsize2 = wh;
 
     if (ww <= 700) {
-        d.querySelector('html').style.fontSize = fontsize2 / 70 + 'px';
+        d.querySelector('html').style.fontSize = fontsize2 / 65 + 'px';
         responsiveMedia('home-box', '(max-width: 700px)');
     }
     else {
