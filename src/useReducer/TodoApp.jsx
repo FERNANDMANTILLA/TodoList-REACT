@@ -37,7 +37,7 @@ export const TodoApp = () => {
     }
 
     return (
-        <>
+        <>  
             <h1 className="text-center d-flex  flex-column">TODO LIST ({todos.length}) <small className="text-danger shadow-text">({toBeDone()}) TODOS to be done</small></h1>
             <hr className="bg-white"/>
 
