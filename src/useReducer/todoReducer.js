@@ -19,6 +19,12 @@ export const todoReducer = (initialState = [], action = {}) => {
                 return todo;
             } );
         
+        case 'TRUE_TODO':
+         return initialState.filter(todo => todo.done === true);
+         
+        case 'FALSE_TODO':
+            return initialState.filter(todo => todo.done === false);
+
         }
            
 }

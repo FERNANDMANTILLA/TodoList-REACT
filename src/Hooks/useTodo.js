@@ -48,12 +48,27 @@ export const useTodo = () => {
         dispatch(action);
     }
 
+    const handleTrueTodo = () => {
+        const action = {
+            type: "TRUE_TODO",
+        };
+
+        dispatch(action);
+    }
+
+    const allTrue = todoReducer(todos, { type: "TRUE_TODO" });
+    const allFalse = todoReducer(todos, { type: "FALSE_TODO" });
+
+    
+
     return {
         ...todos,
         todos,
         handleNewTodo,
         handleDeleteTodo,
         handleToggleToDo,
+        allTrue,
+        allFalse,
     }
 
 }
