@@ -12,7 +12,7 @@ export const Router = () => {
              <Route path="TodoList-REACT/" element={<Page type='TODO LIST' todos={todos} handleDeleteTodo={handleDeleteTodo} handleToggleToDo={handleToggleToDo} handleNewTodo={handleNewTodo}  />} />
              <Route path="TodoList-REACT/pendings" element={<Page type='PENDING TODO LIST' todos={allFalse} handleDeleteTodo={handleDeleteTodo} handleToggleToDo={handleToggleToDo} handleNewTodo={handleNewTodo}  />} />
              <Route path="TodoList-REACT/completed" element={<Page type='COMPLETED TODO LIST' todos={allTrue} handleDeleteTodo={handleDeleteTodo} handleToggleToDo={handleToggleToDo} handleNewTodo={handleNewTodo}  />} />
-             <Route path="*"  element={<Page type='TODO LIST' todos={todos} handleDeleteTodo={handleDeleteTodo} handleToggleToDo={handleToggleToDo} handleNewTodo={handleNewTodo}  />} />
+             
             </Routes>
     </>
   )
